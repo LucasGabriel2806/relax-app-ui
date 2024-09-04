@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background-color: #4E5052;
+    --white: #fff;
+    --black: #000;
+    --fonte: "Exo", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+    color: var(--white)
+}
+
+body {
+    background-color: var(--background-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.884)),
+    url("../img/background-image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.5%;
+    height: 88%;
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+}
+
+.top .title {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.top .title h1 {
+    display: inline;
+    margin-bottom: 12px;
+}
+
+.top .title i {
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;
+}
+
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 92%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bottom h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.task img, .task p {
+    display: inline;
+}
+
+.task .name {
+    margin-left: 15px;
+}
+
+.task .time {
+    position: absolute;
+    right: 20px;
+}
